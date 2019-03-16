@@ -22,3 +22,8 @@ var module={
 var tmp=module.sayHello;
 var res=tmp.myApply(module);
 console.log(res);
+// 首先要先原型上即 Function.prototype上编程
+// 需要拿到函数的引用， 在这里是 this
+// 让 传入对象.fn = this
+// 执行 传入对象.fn(传入参数)
+// 返回执行结果
